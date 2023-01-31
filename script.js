@@ -119,5 +119,6 @@ function vaciarCarrito() {
     localStorage.removeItem("carrito")
     alert("Has vaciado tu carrito")
     contenedorCarrito.innerText = ""
+    carrito = []
 }
 
