@@ -22,6 +22,8 @@ function miPrograma(productos) {
     let showTotal = document.getElementById("totalOrden")
     let verCarrito = document.getElementById("verCarrito")
     verCarrito.addEventListener("click", mostrarOcultarCarrito)
+    let verCarrito1 = document.getElementById("verCarrito1")
+    verCarrito1.addEventListener("click", mostrarOcultarCarrito)
 
     function mostrarOcultarCarrito() {
         shopContent.classList.toggle("ocultar")
@@ -111,16 +113,26 @@ function miPrograma(productos) {
 
 
     function finalizarCompra() {
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: "Su compra ha sido exitosa, el total es $" + total,
+            showConfirmButton: false,
+            timer: 3000
+        })
         localStorage.removeItem("carrito")
         carrito = []
         renderizarCarrito(carrito)
-        alert("el total es $" + total)
+
     }
 
 
     function vaciarCarrito() {
+        Swal.fire({
+            icon: 'error',
+            text: "Has vaciado tu carrito",
+        })
         localStorage.removeItem("carrito")
-        alert("Has vaciado tu carrito")
         contenedorCarrito.innerText = ""
         carrito = []
     }
