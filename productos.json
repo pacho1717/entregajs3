@@ -1,0 +1,7 @@
+[
+    { "id": 2, "nombre": "Pacific", "precio": 90, "tipo": "botella", "img": "./images/pacific_ale.png" },
+    { "id": 1, "nombre": "Pale Ale", "precio": 100, "tipo": "botella", "img": "./images/Pale_ale.png"},
+    { "id": 3, "nombre": "Nitro", "precio": 120, "tipo": "botella", "img": "./images/Nitro.png" },
+    { "id": 4, "nombre": "Wheat", "precio": 80, "tipo": "lata", "img": "./images/wheat Lata.png" },
+    { "id": 5, "nombre": "Japanese", "precio": 110, "tipo": "lata", "img": "./images/Japanese.png" }
+]
